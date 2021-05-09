@@ -28,6 +28,8 @@ shrink_message = re.compile(
 
 @bot.event
 async def on_message(message):
+    if message.author.bot:
+        return
     mentioned_ids = message.raw_mentions
     if len(mentioned_ids) == 0:
         return
