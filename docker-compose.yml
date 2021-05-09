@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  bot:
+    image: otto_bot:1
+    build:
+      context: .
+    environment:
+      CONFIG_PATH: '/var/otto_bot/config.ini'
