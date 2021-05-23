@@ -23,7 +23,7 @@ config = configparser.ConfigParser()
 config.read(os.environ.get("CONFIG_PATH"))
 
 sizeray_message = re.compile(
-    r"<:(?:shrinkray:795068808002928642|sizeray:789563482906689627)>\s*<@\!840458895670378517>\s*"
+    r"<:(?:shrinkray:795068808002928642|sizeray:789563482906689627)>\s*<@\!?840458895670378517>\s*"
 )
 
 tiny_responses = [
